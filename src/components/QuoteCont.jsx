@@ -1,6 +1,7 @@
 import { data } from 'autoprefixer'
 import React from 'react'
 import { useState, useEffect } from 'react'
+import QuoteBody from './QuoteBody'
 import QuoteNum from './QuoteNum'
 
 /*This container sets the background for: 
@@ -47,6 +48,8 @@ export default function QuoteCont() {
     <>
         <div className="w-33.75 h-22.75 bg-darkishBlue rounded-3xl">
             <QuoteNum />
+            {/*Short-Circuit Evaluation: && is a conscise way to conditionally render <QuoteBody /> if the value of advice != null; */}
+            {advice && <QuoteBody adviceBody={advice.slip} />} 
         </div>
     </>
   )
