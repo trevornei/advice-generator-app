@@ -1,11 +1,11 @@
 import './App.css'
+import QuoteCont from './components/QuoteCont'
 
 function App() {
-
   return (
     <>
-      <div className="w-screen h-screen bg-darkBlue">
-        
+      <div className="flex items-center justify-center w-screen h-screen bg-darkBlue">
+        <QuoteCont />
       </div>
     </>
   )
