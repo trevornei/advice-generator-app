@@ -1,4 +1,7 @@
+import { data } from 'autoprefixer'
 import React from 'react'
+import { useState, useEffect } from 'react'
+import QuoteNum from './QuoteNum'
 
 /*This container sets the background for: 
   - QuoteNumber
@@ -19,7 +22,7 @@ import React from 'react'
 
 export default function QuoteCont() {
 
-  const [advice, setAdvice] = usestate[{}]
+  const [advice, setAdvice] = useState(null)
 
   const URL = 'https://api.adviceslip.com/advice'
 
@@ -28,14 +31,22 @@ export default function QuoteCont() {
       .then(data => data.json())
       .then(data => {
         setAdvice(data)
-        console.log(data)
+      })
+      .catch(error => {
+        console.log('Error fetching advice: ' + error)
       })
   }
 
+  // Fetch advice when the component mounts
+  useEffect(() => {
+    getAdvice()
+  }, [])
+
+  console.log(advice)
   return (
     <>
         <div className="w-33.75 h-22.75 bg-darkishBlue rounded-3xl">
-
+            <QuoteNum />
         </div>
     </>
   )
