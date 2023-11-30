@@ -16,7 +16,14 @@ export default {
       'darkishBlue': '#323a49',
       'darkBlue': '#1f2632',
     },
-    extend: {},
+    extend: {
+      width: {
+        '33.75': '33.75rem',
+      }, 
+      height: {
+        '364': '22.75rem', 
+      }, 
+    },
   },
   plugins: [],
 }
