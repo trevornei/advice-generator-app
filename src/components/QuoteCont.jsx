@@ -48,17 +48,13 @@ export default function QuoteCont() {
   console.log(advice)
   return (
     <>
-        <div className="w-33.75 h-22.75 bg-darkishBlue space-y-8 rounded-3xl px-20 pt-12 flex flex-col items-center justify center">
+        <div className="w-33.75 h-22.75 bg-darkishBlue space-y-8 rounded-3xl px-20 py-4 my-4 flex flex-col items-center justify-center">
             {/* <QuoteNum /> */}
             {advice && <QuoteNum quoteNum={advice.slip.id} />}
-            {/*Short-Circuit Evaluation: && is a conscise way to conditionally render <QuoteBody /> if the value of advice != null; */}
-            {advice && <QuoteBody adviceBody={advice.slip} />}
-            
-            <div className="flex flex-row items-center justify-center">
+              {/*Short-Circuit Evaluation: && is a conscise way to conditionally render <QuoteBody /> if the value of advice != null; */}
+              {advice && <QuoteBody adviceBody={advice.slip} />}
               <svg width="295" height="16" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="#4F5D74" d="M0 8h122v1H0zM173 8h122v1H173z"/><g transform="translate(138)" fill="#CEE3E9"><rect width="6" height="16" rx="3"/><rect x="14" width="6" height="16" rx="3"/></g></g></svg>
-            </div>
-
-            <div className="absolute inset-x-[690px] inset-y-[463px]">
+            <div className="absolute inset-x-[690px] inset-y-[463px] ">
               <DiceCont />
             </div>
 

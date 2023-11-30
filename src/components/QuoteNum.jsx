@@ -4,7 +4,7 @@ export default function QuoteNum({ quoteNum }) {
     return(
         <>
             <div className="">
-                <h3 className="font-light tracking-widest text-neonGreen">ADVICE # {quoteNum}</h3>
+                <h3 className="font-light tracking-widest leading-2 text-neonGreen">ADVICE # {quoteNum}</h3>
             </div>
         </>
     )
