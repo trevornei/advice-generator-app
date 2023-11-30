@@ -15,7 +15,6 @@ export default {
       'grayishBlue': '#4e5d73',
       'darkishBlue': '#323a49',
       'darkBlue': '#1f2632',
-      
     },
     extend: {},
   },
