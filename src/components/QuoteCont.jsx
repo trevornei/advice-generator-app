@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react'
 import QuoteBody from './QuoteBody'
 import QuoteNum from './QuoteNum'
 
+import DiceCont from './DiceCont/diceCont'
+
 /*This container sets the background for: 
   - QuoteNumber
   - QuoteBody
@@ -50,7 +52,10 @@ export default function QuoteCont() {
             {/* <QuoteNum /> */}
             {advice && <QuoteNum quoteNum={advice.slip.id} />}
             {/*Short-Circuit Evaluation: && is a conscise way to conditionally render <QuoteBody /> if the value of advice != null; */}
-            {advice && <QuoteBody adviceBody={advice.slip} />} 
+            {advice && <QuoteBody adviceBody={advice.slip} />}
+            <div className="flex flex-row">
+              <DiceCont />
+            </div>
         </div>
     </>
   )
