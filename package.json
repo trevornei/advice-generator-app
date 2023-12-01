@@ -2,7 +2,7 @@
   "name": "advice-generator-app",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://trevornei.github.io/advice-generator-app/",
+  "homepage": "https://github.com/trevornei/advice-generator-app",
   "type": "module",
   "scripts": {
     "dev": "vite",
