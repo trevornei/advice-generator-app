@@ -23,6 +23,9 @@ export default {
       height: {
         '22.75': '22.75rem', 
       }, 
+      boxShadow: {
+        '3xl': '0 0px 3px 10px',
+      }
     },
   },
   plugins: [],

@@ -48,7 +48,7 @@ export default function QuoteCont() {
   console.log(advice)
   return (
     <>
-        <div className="w-33.75 h-22.75 bg-darkishBlue space-y-8 rounded-3xl px-20 py-4 my-4 flex flex-col items-center justify-center">
+        <div className="w-33.75 h-22.75 bg-darkishBlue space-y-8 rounded-3xl px-20  my-4 flex flex-col items-center justify-center">
             {/* <QuoteNum /> */}
             {advice && <QuoteNum quoteNum={advice.slip.id} />}
               {/*Short-Circuit Evaluation: && is a conscise way to conditionally render <QuoteBody /> if the value of advice != null; */}
