@@ -16,12 +16,17 @@ export default {
       'darkishBlue': '#323a49',
       'darkBlue': '#1f2632',
     },
+    letterSpacing: {
+      extraWide: '.22em'
+    }
+    ,
     extend: {
       width: {
         '33.75': '33.75rem',
       }, 
       height: {
         '22.75': '22.75rem', 
+        '25': '25rem'
       }, 
       boxShadow: {
         '3xl': '0 0px 100px 10px',
